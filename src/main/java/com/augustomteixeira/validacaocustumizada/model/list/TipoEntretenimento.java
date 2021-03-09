@@ -9,23 +9,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tipo_passa_tempo", schema = "listas")
-public class TipoPassaTempo implements Serializable {
+@Table(name = "tipo_entretenimento", schema = "listas")
+public class TipoEntretenimento implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer idTipoPassaTempo;
+	private Integer idTipoEntretenimento;
 	
 	private String descricao;
 
-	public Integer getIdTipoPassaTempo() {
-		return idTipoPassaTempo;
+	public Integer getIdTipoEntretenimento() {
+		return idTipoEntretenimento;
 	}
 
-	public void setIdTipoPassaTempo(Integer idTipoPassaTempo) {
-		this.idTipoPassaTempo = idTipoPassaTempo;
+	public void setIdTipoEntretenimento(Integer idTipoEntretenimento) {
+		this.idTipoEntretenimento = idTipoEntretenimento;
 	}
 
 	public String getDescricao() {
@@ -34,7 +34,7 @@ public class TipoPassaTempo implements Serializable {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
+	}	
 	
 	
 	

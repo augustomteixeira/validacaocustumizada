@@ -3,9 +3,9 @@ package com.augustomteixeira.validacaocustumizada.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.augustomteixeira.validacaocustumizada.model.PassaTempo;
+import com.augustomteixeira.validacaocustumizada.model.Entretenimento;
 
 @Repository
-public interface PassaTempoRepository extends JpaRepository<PassaTempo, Integer>{
+public interface EntretenimentoRepository extends JpaRepository<Entretenimento, Integer>{
 
 }

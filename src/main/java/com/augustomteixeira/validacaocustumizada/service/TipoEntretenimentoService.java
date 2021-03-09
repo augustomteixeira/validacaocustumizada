@@ -3,6 +3,6 @@ package com.augustomteixeira.validacaocustumizada.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TipoPassaTempoService {
-
+public class TipoEntretenimentoService {
+	
 }

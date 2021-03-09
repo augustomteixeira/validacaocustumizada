@@ -9,21 +9,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "passa_tempo")
-public class PassaTempo implements Serializable{
+@Table(name = "entretenimento")
+public class Entretenimento implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer idPassaTempo;
+	private Integer idEntretenimento;
+	
+	
 
-	public Integer getIdPassaTempo() {
-		return idPassaTempo;
+	public Integer getIdEntretenimento() {
+		return idEntretenimento;
 	}
 
-	public void setIdPassaTempo(Integer idPassaTempo) {
-		this.idPassaTempo = idPassaTempo;
+	public void setIdEntretenimento(Integer idPassaTempo) {
+		this.idEntretenimento = idPassaTempo;
 	}
 	
 	
