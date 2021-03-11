@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}">
+
+    <meta charset="UTF-8">
+    <title>Validação Customizada</title>
+</head>
+
+<body>
+	
+	
+	<div class="row">
+		<div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Selecionar tipo de entretenimento</strong>
+                </div>
+                <div class="card-body">
+                    <select class="form-control select2 input-sm" required="required">
+                    	<option>Selecione</option>
+                    	<option th:each="entretenimento : ${tiposDeEntretenimento}" 
+                    			th:text="${entretenimento.descricao}" th:value="${entretenimento.descricao}"></option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+	</div>
+
+	<th:block>
+		<script th:src="@{https://code.jquery.com/jquery-3.5.0.js}" crossorigin="anonymous"></script>
+	    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}"
+	        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	        crossorigin="anonymous"></script>
+	    <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js}"
+	        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	        crossorigin="anonymous"></script>
+	        
+	    <script th:src="@{/js/upload-imagem.js}"></script>
+    </th:block>
+</body>
+</html>
