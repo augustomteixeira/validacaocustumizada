@@ -7,5 +7,6 @@ $(document).ready(function() {
 });
 
 $('#tipoEntretenimento').on('change', function(e) {
-	$('#camposEntretenimento').load('/campos/tipo/entretenimento/');
+	let idTipoEntretenimento = $(this).val();
+	$('#camposEntretenimento').load('/campos/tipo/entretenimento/' + idTipoEntretenimento);
 });
