@@ -47,10 +47,8 @@ public class EntretenimentoService {
 		if (entretenimentoDto.getTipoEntretenimento() != null) {
 			entretenimento.setTipoEntretenimento(entretenimentoDto.getTipoEntretenimento());
 		}
-		
-		entretenimentoRepository.save(entretenimento);
 
-		return entretenimento;
+		return entretenimentoRepository.save(entretenimento);
 	}
 
 }
