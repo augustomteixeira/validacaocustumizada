@@ -4,9 +4,9 @@ import java.util.Date;
 import com.augustomteixeira.validacaocustumizada.model.list.TipoEntretenimento;
 import com.augustomteixeira.validacaocustumizada.validacao.annotations.Titulo;
 
+@Titulo
 public class EntretenimentoDto {
 	
-	@Titulo
 	private String titulo;
 
 	private String descricao;
